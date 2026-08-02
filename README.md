@@ -49,3 +49,7 @@ After committing these two new files, I create a .gitignore and requirements.txt
 *.gitignore file* - a file in the repo to tell Git which files and directories to ignore when you make a commit
 
 *requirements.txt* - a list of all of a project's dependencies + the specific version to help the user/developer know what packages are needed to run the project, avoiding any compatibility issues.
+
+All done (merged)!
+<img width="577" height="53" alt="Screenshot 2026-08-03 at 00 16 59" src="https://github.com/user-attachments/assets/55ad3f8c-9ae9-4421-946a-13068a4c1e2b" />
+
