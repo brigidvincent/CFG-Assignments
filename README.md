@@ -7,14 +7,14 @@ Hi! I'm **Brigid**, and I'll be using this repository for all CFG assignments, m
 ### What I've worked on before
 
 I've always been interested in tech, and have dabbled in many different areas of interest within this...
- - *Python*: After completing a Data Analytics course (*Google*), I used Python to collect, clean and analyse thousands of chess games by my favourite/ the most renowned chess players (Fischer, Kasparov, Carlsen, Nakamura, etc) in PGN format to reveal insights I was interested in - their 'favourite' piece to open with, their win and lose rate, if playing as white would make a measurable difference to their performance, which opening would most likely lead to their victory/loss, etc...
- - *HTML, CSS, Javascript*: learnt through freecodecamp, and have been recently learning *React* to create interactive and visually appealing websites. Web development has been super fun for me :)
- - *C# with Unity* the most enjoyable foray I've had into tech - I created a small rocket blaster game. I'd love to return to this and create a more complicated narrative game...
+ - <ins>*Python*</ins>: After completing a Data Analytics course (*Google*), I used Python to collect, clean and analyse thousands of chess games by my favourite/ the most renowned chess players (Fischer, Kasparov, Carlsen, Nakamura, etc) in PGN format to reveal insights I was interested in - their 'favourite' piece to open with, their win and lose rate, if playing as white would make a measurable difference to their performance, which opening would most likely lead to their victory/loss, etc...
+ - <ins>*HTML, CSS, Javascript*</ins>: learnt through freecodecamp, and have been recently learning *React* to create interactive and visually appealing websites (please see my [plan_my_week](https://github.com/brigidvincent/plan-your-week.git) project documenting my *React* learning journey). Web development has been super fun for me :)
+ - <ins>*C# with Unity*</ins>: the most enjoyable foray I've had into tech - I created a small rocket blaster game. I'd love to return to this and create a more complicated narrative game...
 
 ---
 ### Useful info I've learnt so far
 
-**Git commands**
+<ins>**Git commands**</ins>
  > - `cd /path` change directory
  > - `git init` creates a new, empty git repo in the current folder
 > - `git status` gives you useful info on the directory/project you’re on (like any untracked files).
@@ -44,7 +44,7 @@ After committing these two new files, I create a .gitignore and requirements.txt
 
 <img width="620" height="115" alt="Screenshot 2026-08-02 at 23 40 10" src="https://github.com/user-attachments/assets/05ae8451-4a19-49c4-9fd3-8d75f94a95e7" />
 
-*Brief explanations*
+<ins>*Brief explanations*</ins>
 
 *.gitignore file* - a file in the repo to tell Git which files and directories to ignore when you make a commit
 
