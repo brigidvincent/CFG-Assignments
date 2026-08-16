@@ -51,5 +51,26 @@ After committing these two new files, I create a .gitignore and requirements.txt
 *requirements.txt* - a list of all of a project's dependencies + the specific version to help the user/developer know what packages are needed to run the project, avoiding any compatibility issues.
 
 All done (merged)!
+
 <img width="577" height="53" alt="Screenshot 2026-08-03 at 00 16 59" src="https://github.com/user-attachments/assets/55ad3f8c-9ae9-4421-946a-13068a4c1e2b" />
 
+## Assignment 2 ##
+
+For our API assignment, I think I picked a bit of a complicated route but stuck to it...
+
+First I mapped out my initial ideas/workflow in comments with links to APIs I might use:
+
+<img width="1139" height="392" alt="Screenshot 2026-08-16 at 23 22 43" src="https://github.com/user-attachments/assets/922281b7-4226-404f-9591-ee1bc5da3421" />
+
+I decided I wanted to use a few APIs in my project to get the full hang of them, so decided to create a simple "last-minute" holiday planner...
+ - <ins>*User preferences*</ins>: It would first ask the user their preferences on weather (Sunny and warm, or cold and snowy)
+ - <ins>*Date of holiday*</ins>: The start date and the length of the holiday the user wants
+ - <ins>*Result*</ins>: Then returns a "top 3" cities to visit - initially I was going to base this off the popularity of the location (see above screenshot), but decided instead to give a "weather score" (based off the temp and the 'sunniness'/'snowiness' of the location to make it more personalised towards the user.
+
+I wanted to include multiple cities for each country to look through, but didn't know how to go about this without either spending too much time hand-picking a couple of cities for each country or importing a massive amount of data? (i.e. checking the weather for every city in the world) so I decided on just using [my countries API](https://countries.dev) to grab the capitals of each country (as well as the coordinates for [my weather API](https://open-meteo.com) to grab the weather forecast and historical weather data for extrapolating for dates past the forecast - max 16 days - but this is detailed more in the comments of the python code) and using those... I'd like to come back to this to flesh it out more when I know more about python/how to use it efficiently :)
+
+I wrote out how I wanted my program to work in comments, replacing/deleting them (or condensing them to explain what I was doing) as i started to code out the actual program. please see below
+
+<img width="971" height="503" alt="Screenshot 2026-08-16 at 23 24 13" src="https://github.com/user-attachments/assets/89b03782-e97a-4afc-b478-62d162e1b51d" />
+
+I hope you enjoy using this as it took me a while! :) 
