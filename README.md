@@ -56,7 +56,7 @@ All done (merged)!
 
 ## Assignment 2 ##
 
-For our API assignment, I think I picked a bit of a complicated route but stuck to it...
+For our API assignment, I think I picked a bit of a complicated project so changed / reduced what I was doing quite a few times...
 
 First I mapped out my initial ideas/workflow in comments with links to APIs I might use:
 
@@ -64,12 +64,12 @@ First I mapped out my initial ideas/workflow in comments with links to APIs I mi
 
 I decided I wanted to use a few APIs in my project to get the full hang of them, so decided to create a simple "last-minute" holiday planner...
  - <ins>*User preferences*</ins>: It would first ask the user their preferences on weather (Sunny and warm, or cold and snowy)
- - <ins>*Date of holiday*</ins>: The start date and the length of the holiday the user wants
- - <ins>*Result*</ins>: Then returns a "top 3" cities to visit - initially I was going to base this off the popularity of the location (see above screenshot), but decided instead to give a "weather score" (based off the temp and the 'sunniness'/'snowiness' of the location to make it more personalised towards the user.
+ - <ins>*Date of holiday*</ins>: Initially I let the user set the start date but this became complicated, so altered the project to make it find a holiday starting tomorrow, and let the user set the length of the holiday (within 14 days to keep weather reliable)
+ - <ins>*Result*</ins>: The program then returns a "top 3" cities to visit - initially I was going to base this off the popularity of the location (see above screenshot), but decided instead to give a "weather score" (based off the temp and the 'sunniness'/'snowiness' of the location to make it more personalised towards the user) and randomly choose from these.
 
-I wanted to include multiple cities for each country to look through, but didn't know how to go about this without either spending too much time hand-picking a couple of cities for each country or importing a massive amount of data? (i.e. checking the weather for every city in the world) so I decided on just using [my countries API](https://countries.dev) to grab the capitals of each country (as well as the coordinates for [my weather API](https://open-meteo.com) to grab the weather forecast and historical weather data for extrapolating for dates past the forecast - max 16 days - but this is detailed more in the comments of the python code) and using those... I'd like to come back to this to flesh it out more when I know more about python/how to use it efficiently :)
+I wanted to include multiple cities for each country to look through, but didn't know how to go about this without either spending too much time hand-picking a couple of cities for each country or importing a massive amount of data? (i.e. checking the weather for every city in the world) so I decided on just using [my countries API](https://countries.dev) to grab the capitals of each country and use this to collect the weather forecast with a [weather API](https://www.weatherapi.com) for each. All my steps are detailed more in the comments of the python code) ... I'd like to come back to this to flesh it out more when I know more about python/how to use it efficiently :)
 
-I wrote out how I wanted my program to work in comments, replacing/deleting them (or condensing them to explain what I was doing) as i started to code out the actual program. please see below
+I wrote out how I wanted my program to work in comments, replacing/deleting them (or condensing them to explain what I was doing) as i started to code out the actual program. Please see below
 
 <img width="971" height="503" alt="Screenshot 2026-08-16 at 23 24 13" src="https://github.com/user-attachments/assets/89b03782-e97a-4afc-b478-62d162e1b51d" />
 
