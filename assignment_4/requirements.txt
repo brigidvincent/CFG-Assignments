@@ -1,0 +1,11 @@
+Flask : specifically Flask, jsonify, request
+>> pip install Flask
+
+mysql-connector-python : in order to connect to database
+>> pip install mysql-connector-python
+
+python-dotenv : to be able to access private credentials seperately from config.py
+>> pip install python-dotenv
+
+requests : to communicate between the client side and the API
+>> pip install requests
