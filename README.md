@@ -12,7 +12,7 @@ I've always been interested in tech, and have dabbled in many different areas of
  - <ins>*C# with Unity*</ins>: the most enjoyable foray I've had into tech - I created a small rocket blaster game. I'd love to return to this and create a more complicated narrative game...
 
 ---
-### Useful info I've learnt so far
+### What I've learnt in week 1
 
 <ins>**Git commands**</ins>
  > - `cd /path` change directory
@@ -30,9 +30,9 @@ I've always been interested in tech, and have dabbled in many different areas of
 > - `git branch -d feature` deletes *feature* branch
 > - `git branch` lists all branches
 
-## Assignment 1 ##
+## Assignment 1 - Git and Github ##
 
-Please see below for my workflow for this assignment :)
+Please see below for my workflow for this assignment - this was mainly testing if we understand how to use a VCS git within github for future group work...
 
 Here, I direct to the correct folder on my laptop and make my *'assignment 1'* folder into a git repo, check the status, create, add to tracking and commit a new file to my main branch to make it live. I then create a branch *my_first_branch*, switch to it, and create a few files within it.
 
@@ -54,7 +54,7 @@ All done (merged)!
 
 <img width="577" height="53" alt="Screenshot 2026-08-03 at 00 16 59" src="https://github.com/user-attachments/assets/55ad3f8c-9ae9-4421-946a-13068a4c1e2b" />
 
-## Assignment 2 ##
+## Assignment 2 - Python and APIs ##
 
 For our API assignment, I think I picked a bit of a complicated project so changed / reduced what I was doing quite a few times...
 
@@ -69,8 +69,16 @@ I decided I wanted to use a few APIs in my project to get the full hang of them,
 
 I wanted to include multiple cities for each country to look through, but didn't know how to go about this without either spending too much time hand-picking a couple of cities for each country or importing a massive amount of data? (i.e. checking the weather for every city in the world) so I decided on just using [my countries API](https://countries.dev) to grab the capitals of each country and use this to collect the weather forecast with a [weather API](https://www.weatherapi.com) for each. All my steps are detailed more in the comments of the python code) ... I'd like to come back to this to flesh it out more when I know more about python/how to use it efficiently :)
 
-I wrote out how I wanted my program to work in comments, replacing/deleting them (or condensing them to explain what I was doing) as i started to code out the actual program. Please see below
+I wrote out how I wanted my program to work in comments, replacing/deleting them (or condensing them to explain what I was doing) as I started to code out the actual program. Please see below my initial bits of code and ideas !
 
 <img width="971" height="503" alt="Screenshot 2026-08-16 at 23 24 13" src="https://github.com/user-attachments/assets/89b03782-e97a-4afc-b478-62d162e1b51d" />
 
 I hope you enjoy using this as it took me a while! :) 
+
+## Assignment 3 - Data and SQL ##
+
+This Assignment tasked us to design and implement a relational database, demonstrating normalisation and understanding of more complex SQL queries to gain insights into our own data. I chose to create a database that a fictional PI (Private Investigator) company might use to keep track of their clients, potential suspects, cases and detectives. I then carried out various queries to reveal interesting information or queries the PI company might have made - e.g. seeing the best available detective for a specific case. Please see the SQL file for comments in the code.
+
+## Assignment 4 - Advanced Python ##
+
+This Assignment was tasked to us to bring all our knowledge up to this point (Week 8) together by designing and implementing a simple API - using Flask - to tackle a unique problem or scenario, and show a real-life expected use of a database. I chose to do create a film database, and implemented a *very* simple UI to show potential use of my API (to help users find a film to watch based on their preferences, as well as a Surprise Me! functionality). Please see all code under assignment 4 (with comments and proper separation of components).
