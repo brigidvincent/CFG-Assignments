@@ -19,7 +19,7 @@
 - **helper_functions.py** : This includes all the functions my API uses to query and interact with the database, stored separately from app.py to avoid cluttering my flask app.
 
 ## Installation Requirements
-To run this application, Python 3 and MySQL are required. You will also need the modules detailed in *requirements.txt*, which you can download within a venv (virtual environment so that these are not installed globally):
+To run this application, Python 3 and MySQL are required. You will also need the modules detailed in *requirements.txt*, which you can download within a venv:
 > python3 -m venv .venv
 > source .venv/bin/activate
 
