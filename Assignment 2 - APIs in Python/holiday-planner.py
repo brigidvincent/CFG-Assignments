@@ -157,6 +157,10 @@ for country in countries:
         elif country["avg_temp_overall"]<5 and country["avg_temp_overall"]>min_temp_celsius:
             cold_suggested_countries.append(country)
 
+# Save modified API data to a JSON file
+with open("countries_with_weather.json", "w") as file:
+    json.dump(countries, file, indent=4)
+
 #ordering suggested countries in descending order (so that snowiest/sunniest locations are first in the list)
 warm_suggested_countries=sorted(warm_suggested_countries, key=lambda city: city["sunny_score_percentage"], reverse=True) 
 cold_suggested_countries=sorted(cold_suggested_countries, key=lambda city: city["snowy_score_percentage"], reverse=True)
@@ -166,11 +170,13 @@ if chosen_weather == 'a': #if sunny was picked...
     for i in range(3): #3 recommendations
         random_index = random.randint(0, len(warm_suggested_countries)//2) #randomly selects a location in the first half of the list where the sunniest locations are
         final_reccomendation.append(warm_suggested_countries[random_index])
-    print(f"We suggest the following locations! \n a){final_reccomendation[0]} \n b){final_reccomendation[1]} \n c){final_reccomendation[2]}\n")
+    print("We suggest the following locations!")
+    print(json.dumps(final_reccomendation, indent=4))
 
 elif chosen_weather == 'b': #same process with snowy locations
     final_reccomendation = []
     for i in range(3): 
         random_index = random.randint(0, len(cold_suggested_countries)//2)
         final_reccomendation.append(cold_suggested_countries[random_index])
-    print(f"We suggest the following locations! \n a){final_reccomendation[0]} \n b){final_reccomendation[1]} \n c){final_reccomendation[2]}\n")
+    print("We suggest the following locations!")
+    print(json.dumps(final_reccomendation, indent=4))

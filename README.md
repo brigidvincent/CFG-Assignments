@@ -75,9 +75,20 @@ I wrote out how I wanted my program to work in comments, replacing/deleting them
 
 I hope you enjoy using this as it took me a while! :) 
 
+**UPDATE**: Please note, I have now updated this assignment's code to reflect the feedback of my marker:
+*feedback as follows*: 
+• I would advise using json.dumps when you want to print so as to format your list nicely.
+• You did not write the API data after modification into a file.
+
 ## Assignment 3 - Data and SQL ##
 
 This Assignment tasked us to design and implement a relational database, demonstrating normalisation and understanding of more complex SQL queries to gain insights into our own data. I chose to create a database that a fictional PI (Private Investigator) company might use to keep track of their clients, potential suspects, cases and detectives. I then carried out various queries to reveal interesting information or queries the PI company might have made - e.g. seeing the best available detective for a specific case. Please see the SQL file for comments in the code.
+
+**UPDATE**: Please note, I have now updated this assignment's code to reflect the feedback of my marker into a separate REVISED edition, under the Assignment 3 folder:
+• There is data duplication in your table formation. The  tbl_suspects should have a unique constraint becase of a suspect in case A becomes a suspect in case B, the person's details could be inserted into the table again without any alert. Same with the client table.
+• Cases contain detective_id, does this mean that only one detective can work on a case?
+• Your foreign key prevents the delete query from running.
+
 
 ## Assignment 4 - Advanced Python ##
 

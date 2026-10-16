@@ -47,7 +47,7 @@ CREATE TABLE tbl_Suspects(
 	first_name varchar(50),
 	last_name varchar(50),
 	contact_number varchar(20),
-	location varchar(100)
+	location varchar(100) -- last known location
 );
 
 -- junction table for suspects and cases (as many to many relationship)
