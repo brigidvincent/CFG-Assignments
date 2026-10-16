@@ -25,19 +25,20 @@ To run this application, Python 3 and MySQL are required. You will also need the
 
 ## How to set up
 <p>First, you need to set up a config.py file (or use the one in this project), and alongside it, a .env file, which the config file will use to get the credentials needed to run...</p>
-<p>Your .env file should look like this: </p>
-DB_HOST = localhost
-DB_PORT = your_port_number
-> DB_USER = your_user_name
-> DB_PASSWORD = your_password
-> DB_NAME = entertainment_db 
+<ins>Your .env file should look like this: </ins>
+
+> - DB_PORT = your_port_number
+> - DB_USER = your_user_name
+> - DB_PASSWORD = your_password
+> - DB_NAME = entertainment_db 
 
 *The values above are placeholders, and you should replace with your own credentials.*
 *The database name should be initially commented out during database creation (when running database.py)*
 
 ## How to Run
 <p> Next, the following files should be run in the coming order:</p>
-- First, run **database.py** to set up the needed database, and only *once* 
+
+- First, run **database.py** to set up the needed database, and only *once*
 > python3 database.py
 - Next, **app.py** should be run to start up the API - this should provide you with a message with a link (e.g. Running on http://127.0.0.1:5000 ). One clicked (Ctrl+click or Cmd+click), you should see a welcome message on a website.
 > python3 app.py
